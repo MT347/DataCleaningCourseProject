@@ -1,0 +1,33 @@
+Course Project Code Book 
+========================
+
+This Code book is based on the feature description provided with the data(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+It has been adapted to reflect the transformations that have been made to the data.
+
+See the README.MD file or the script run_analysis.R for a description of the transformations.
+
+
+
+
+subject		integer (1..30); unique identifyer of the participatinc subjects
+
+activity	string (WALKING
+|WALKING_UPSTAIRS
+|WALKING_DOWNSTAIRS
+|SITTING
+|STANDING
+|LAYING
+); describes the activity observed during the observation in question
+
+type		string (t|f); 't' indicates time signals, 'f' indicates frequency domain signals
+
+feature		string (BodyAcc|BodyAccJerk|BodyAccJerkMag|BodyAccMag|BodyBodyAccJerkMag|BodyBodyGyroJerkMag|BodyBodyGyroMag|BodyGyro|BodyGyroJerk|BodyGyroJerkMag|BodyGyroMag|GravityAcc|GravityAccMag); indicates the feature used to describe the movement
+
+measure		string (mean()|std()); denotes the estimated variable, 'mean()' indicates Mean value, 'std()' indicates standard deviation
+
+orientation	string (X|Y|Z|NA); denotes 3-axial signals in the X, Y and Z directions (where applicable), signals that or not 3-axial are marked as 'NA'
+
+value		numeric (-1...1); observed value (mean value over all observations for this combination of 'subject' and 'activity')	
+
+
+
